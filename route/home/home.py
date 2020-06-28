@@ -4,15 +4,15 @@ from flask import render_template
 from jinja2 import TemplateNotFound
 
 
-router = Blueprint('editor_route', __name__,
+router = Blueprint('home_route', __name__,
                     template_folder='templates',
                     static_folder='static',
-                    static_url_path='/editor/static')
+                    static_url_path='/home/static')
 
 
-@router.route('/editor')
+@router.route('/home')
 def index():
     try:
-        return render_template('editor.html', page='this is your page.')
+        return render_template('home.html')
     except TemplateNotFound:
         abort(404)
