@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bokio - Home</title>
+  <link rel="icon" href="{{ url_for('home_route.static', filename='bokio.png') }}" sizes="16x16" type="image/png">
+  <link rel="stylesheet" href="{{ url_for('home_route.static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href='https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body style="background-color:#edf2f7;">
+  <nav dir="rtl" class="navbar navbar-light" style="background-color: #706fd3;z-index: 1;position: sticky">
+    <a class="navbar-brand" href="#">
+      <img src="{{ url_for('home_route.static', filename='bokio.png') }}" width="40" height="40" alt="" style="border-radius: 5px; border: 1px darkgrey double;box-shadow: 5px 5px #888888">
+    </a>
+  </nav>
+  <div class="border-bottom" style="height: 5%;background-color:#706fd3;">
+    
+  </div>
+  <div class="container" style="margin-top: -0.3rem;">
+      <div class="jumbotron border" style="margin-top: -32px; padding-top: 2rem;padding-bottom: 2rem;z-index: 2;position: sticky; background-color: white;">
+        <nav dir="rtl" class="navbar navbar-light">
+          <span class="ml-auto" style="float: right; font-family: vazir; font-size: 2em;">
+            پروژه ها
+          </span>
+          <button class="btn btn-primary btn-lg Vazir" style="font-family: vazir;" onclick="location.href='/home/create'">ساخت کتاب جدید</button>
+        </nav>
+      </div>
+      <div class="jumbotron border book-item" style="margin-top: -42px; padding-top: 2rem;padding-bottom: 2rem;z-index: 2;position: sticky;border-radius: 0; background-color: white;" onclick="">
+        <nav dir="rtl" class="navbar navbar-light">
+          <span class="ml-auto" style="float: right; font-family: vazir; font-size: 1.6em;">
+            دفترچه راهنمای استارتاپ
+          </span>
+          <button class="btn btn-light btn-sm Vazir" style="border: 1px lightgray double; margin-left: 5px;" onclick="location.href='/home/startup-playbook-fa'">
+            https://bokio.fly.dev/startup-playbook-fa
+          </button>
+          <button class="btn btn-light btn-sm Vazir" style="border: 1px lightgray double; margin-left: 5px;">
+            <i class="fa fa-reply" aria-hidden="true"></i>
+          </button>
+          <button class="btn btn-light btn-sm Vazir" style="border: 1px lightgray double;">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+        </nav>
+      </div>
+  </div>
+  <!-- partial -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
